@@ -1,0 +1,33 @@
+CRITICAL - 2024-07-28 18:41:54 --> ErrorException: Undefined variable $numero
+[Method: GET, Route: teste-get]
+in APPPATH/Controllers/Home.php on line 108.
+ 1 APPPATH/Controllers/Home.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $numero', '/var/www/public/app/Controllers/Home.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->testeGet()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-28 18:46:22 --> Exception: Error Processing Request
+[Method: GET, Route: teste-get]
+in APPPATH/Controllers/Home.php on line 109.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->testeGet()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-28 19:29:16 --> ErrorException: Undefined variable $products
+[Method: POST, Route: store]
+in APPPATH/Views/home.php on line 79.
+ 1 APPPATH/Views/home.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', '/var/www/public/app/Views/home.php', 79)
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/public/app/Views/home.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH/Controllers/Home.php(59): view('home', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->store()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
